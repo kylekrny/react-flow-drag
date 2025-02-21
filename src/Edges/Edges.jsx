@@ -1,46 +1,17 @@
 import EdgeAddButton from '../Buttons/EdgeAddButton/EdgeAddButton.jsx';
 
 import './Style.scss';
-import { getEdgeCenter, getBezierPath } from '@xyflow/react';
+import { getEdgeCenter } from '@xyflow/react';
 
 const [buttonWidth, buttonHeight] = [100, 40];
 
 export const Condition = (props) => {
-  const {
-    id,
-    sourceX,
-    sourceY,
-    targetX,
-    targetY,
-    sourcePosition,
-    targetPosition,
-    markerEnd,
-    data,
-  } = props;
+  const { id, sourceX, sourceY, targetX, targetY, markerEnd, data } = props;
 
-  // Debugging: Log the values being passed to getBezierPath
-  console.log(
-    'sourceX:',
-    sourceX,
-    'sourceY:',
-    sourceY,
-    'targetX:',
-    targetX,
-    'targetY:',
-    targetY
-  );
-
-  const edgePath = getBezierPath({
-    sourceX,
-    sourceY,
-    sourcePosition,
-    targetX,
-    targetY,
-    targetPosition,
-  });
-
-  // Debugging: Log the generated edgePath
-  console.log('edgePath:', edgePath);
+  // Simplified path generation
+  const edgePath = `M${sourceX},${sourceY} C${sourceX},${
+    (sourceY + targetY) / 2
+  } ${targetX},${(sourceY + targetY) / 2} ${targetX},${targetY}`;
 
   const [edgeCenterX, edgeCenterY] = getEdgeCenter({
     sourceX,
