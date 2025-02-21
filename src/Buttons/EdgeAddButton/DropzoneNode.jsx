@@ -1,6 +1,6 @@
 import { Button } from 'antd';
-import { useState, memo } from 'react';
-import { Handle, Position } from 'react-flow-renderer';
+import { useState } from 'react';
+import { Handle, Position } from '@xyflow/react';
 
 import styles from './nodes.module.scss';
 
@@ -71,4 +71,4 @@ const DropzoneNode = () => {
   );
 };
 
-export default memo(DropzoneNode);
+export default DropzoneNode;

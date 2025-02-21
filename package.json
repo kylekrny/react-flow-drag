@@ -12,6 +12,7 @@
   "dependencies": {
     "@ant-design/icons": "^5.0.1",
     "@contactlab/ds-tokens": "^3.3.0",
+    "@xyflow/react": "^12.4.3",
     "antd": "^5.4.7",
     "dagre": "^0.8.5",
     "lodash": "^4.17.21",

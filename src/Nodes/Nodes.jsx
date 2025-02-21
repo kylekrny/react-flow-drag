@@ -1,6 +1,5 @@
-import { Handle, Position } from 'reactflow';
+import { Handle, Position } from '@xyflow/react';
 import { BaseNode, EmptyBaseNode } from './Base';
-// import { Handle, Position } from "react-flow-renderer";
 
 import './Style.scss';
 

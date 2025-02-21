@@ -1,10 +1,10 @@
-import * as Node from "./Nodes";
+import { Source, Action, Condition, End, Empty } from './Nodes';
 
 export const nodeTypes = {
-  source: Node.Source,
-  email: Node.Action,
-  sms: Node.Action,
-  waitThenCheck: Node.Condition,
-  end: Node.End,
-  empty: Node.Empty,
+  source: Source,
+  email: Action,
+  sms: Action,
+  waitThenCheck: Condition,
+  end: End,
+  empty: Empty,
 };

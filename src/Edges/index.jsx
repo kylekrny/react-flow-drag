@@ -1,5 +1,5 @@
-import * as Edge from "./Edges";
+import { Condition } from './Edges';
 
 export const edgeTypes = {
-  condition: Edge.Condition,
+  condition: Condition,
 };

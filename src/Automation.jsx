@@ -1,11 +1,13 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
-import ReactFlow, {
+import {
+  ReactFlow,
   Controls,
   MiniMap,
   ReactFlowProvider,
   useEdgesState,
   useNodesState,
-} from 'reactflow';
+} from '@xyflow/react';
+import '@xyflow/react/dist/style.css';
 
 // File imports
 import './Automation.css';
